@@ -1,8 +1,11 @@
 require 'faker'
 
-
-tag1 = Tag.create()
+example_tags = []
+tag1 = Tag.create(subject: Faker::Company.bs)
+tag2 = Tag.create(subject: Faker::Company.bs)
+example_tags << tag1.subject << tag2.subject
 
 15.times do
-  Post.create(title: Faker::Company.catch_phrase, body: Faker::Lorem.paragraph)
+  new_post = Post.create(title: Faker::Company.catch_phrase, body: Faker::Lorem.paragraph)
+  new_post.tags.create(subject: example_tags.sample)
 end
