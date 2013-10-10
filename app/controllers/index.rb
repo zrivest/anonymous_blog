@@ -1,4 +1,9 @@
+require 'pry'
+
 get '/' do
-  # Look in app/views/index.erb
+  @all_posts = Post.order('created_at DESC')
   erb :index
 end
+
+#=============POST=============#
+
