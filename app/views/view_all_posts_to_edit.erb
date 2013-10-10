@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Remember, this is anonymous...so fuck it!</h1>  
+  <h2>Pick a post to edit!</h2>
+
+  <a href="/posts/new">Create a new Post!</a><br>
+
+  <% @all_posts.each do |post| %>
+    <ul>Title: <a href="/posts/<%=post.id%>"><%=post.title%></a><br>
+    Post: <%=post.body%></ul>
+  <% end %> 
+</div>

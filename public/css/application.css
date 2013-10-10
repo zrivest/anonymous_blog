@@ -2,8 +2,22 @@
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 6px inset #680000;
+  border-right: none;
+  border-bottom: none;
 }
 th {
   text-align: left;
+}
+
+ul {
+  border: 3px outset #3300FF;
+  padding-bottom: 4px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+li {
+  list-style-type: none;
 }

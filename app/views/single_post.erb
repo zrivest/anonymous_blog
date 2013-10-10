@@ -1,7 +1,9 @@
 <div class="container">  
   <h1>Here are all the deets on this post</h1>
 
-  Title:<ul><%=@post.title%></ul>
-  Post:<ul><%=@post.body%></ul>
-  Tagged as:<ul><%=@post.tags[0].subject%></ul>
+  <ul>
+    <li>Title: <%=@post.title%></li><br>
+    <li>Post: <%=@post.body%></li><br>
+    <li>Tagged as: <%=@post.tags[0].subject%></li>
+  </ul>
 </div>
