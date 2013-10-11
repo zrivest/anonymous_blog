@@ -1,0 +1,7 @@
+<form action="/edit/<%=@post_to_edit.id%>" method='post'>
+  Post Title: <input type="text" name="title" value="<%= @post_to_edit.title %>"><br>
+  Content: <textarea rows="10" cols="56" name="content"><%= @post_to_edit.body %></textarea><br>
+  Tag: <input type="text" name="subject" value="<%= @post_to_edit.tags[0].subject %>"><br>
+       <input type="submit" value="Edit that shit!"><br>
+
+</form>

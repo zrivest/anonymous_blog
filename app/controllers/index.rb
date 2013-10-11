@@ -5,5 +5,8 @@ get '/' do
   erb :index
 end
 
+get "/delete/:id" do
+  Post.find(params[:id]).destroy
+  redirect '/'
+end
 #=============POST=============#
-

@@ -1,11 +1,14 @@
 <div class="container">
   <h1>Welcome to Anon-O Blog</h1>  
-  <h2>Where your posts lack the courage to be recognized!</h2>
+  <h2>Where your posts lack the courage to have an owner!</h2>
 
   <a href="/posts/new">Create a new Post!</a><br>
 
   <% @all_posts.each do |post| %>
-    <ul>Title:<a href="/posts/<%=post.id%>"/><%=post.title%></a><br>
-    Post:<%=post.body%></ul>
+    <ul>
+      <li>Title:<a href="/posts/<%=post.id%>"/><%=post.title%></a></li><br>
+      <li>Post:<%=post.body%></li><br>
+      <li><a href="/delete/<%=post.id%>">Delete That Shit!</a></li>
+    </ul>
   <% end %> 
 </div>
