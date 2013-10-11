@@ -1,0 +1,7 @@
+<% @all_posts.each do |post| %>
+  <ul>
+    <li>Title:<a href="/posts/<%=post.id%>"/><%=post.title%></a></li><br>
+    <li>Post:<%=post.body%></li><br>
+    <li><a href="/delete/<%=post.id%>">Delete That Shit!</a></li>
+  </ul>
+<% end %> 
